@@ -200,7 +200,7 @@ export default function ConfigureSection() {
                     transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
                   >
                     <Image
-                      src={selected.image}
+                      src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${selected.image}`}
                       alt={`DUNE 75 in ${selected.label}`}
                       width={800}
                       height={500}

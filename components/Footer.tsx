@@ -8,19 +8,43 @@ import { Input } from '@/components/ui/input';
 const footerLinks = [
   {
     heading: 'Products',
-    links: ['Dune Light', 'Dune theme', 'Switches', 'Keycaps', 'Accessories'],
+    links: [
+      { label: 'Dune Light', href: '#product' },
+      { label: 'Dune theme', href: '#dune-theme-detail' },
+      { label: 'Switches', href: '#' },
+      { label: 'Keycaps', href: '#' },
+      { label: 'Accessories', href: '#' },
+    ],
   },
   {
     heading: 'Technology',
-    links: ['Gasket Mount', 'Hot-Swap', 'QMK/VIA', 'Wireless', 'RGB System'],
+    links: [
+      { label: 'Gasket Mount', href: '#product-detail' },
+      { label: 'Hot-Swap', href: '#' },
+      { label: 'QMK/VIA', href: '#' },
+      { label: 'Wireless', href: '#' },
+      { label: 'RGB System', href: '#' },
+    ],
   },
   {
     heading: 'Support',
-    links: ['Documentation', 'Warranty', 'Firmware', 'Contact Us', 'Community'],
+    links: [
+      { label: 'Documentation', href: '#' },
+      { label: 'Warranty', href: '#' },
+      { label: 'Firmware', href: '#' },
+      { label: 'Contact Us', href: '#' },
+      { label: 'Community', href: '#' },
+    ],
   },
   {
     heading: 'Company',
-    links: ['About', 'Careers', 'Press', 'Partners', 'Blog'],
+    links: [
+      { label: 'About', href: '#about' },
+      { label: 'Careers', href: '#' },
+      { label: 'Press', href: '#' },
+      { label: 'Partners', href: '#' },
+      { label: 'Blog', href: '#' },
+    ],
   },
 ];
 
@@ -149,13 +173,13 @@ export default function Footer() {
               </h3>
               <ul className="space-y-3">
                 {col.links.map((link) => (
-                  <li key={link}>
+                  <li key={link.label}>
                     <a
-                      href="#"
+                      href={link.href}
                       className="text-[#7a7a8a] text-sm hover:text-[#c8a96e] transition-colors duration-200"
                       style={{ fontFamily: 'var(--font-space-grotesk), sans-serif' }}
                     >
-                      {link}
+                      {link.label}
                     </a>
                   </li>
                 ))}

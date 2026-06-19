@@ -190,7 +190,7 @@ export default function AllProductsSection() {
                     aria-hidden="true"
                   />
                   <Image
-                    src={product.image}
+                    src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}${product.image}`}
                     alt={`${product.name} keyboard colorway`}
                     width={800}
                     height={500}

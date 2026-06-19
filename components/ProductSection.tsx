@@ -179,7 +179,7 @@ export default function ProductSection() {
           {/* Product image */}
           <div className="relative w-full max-w-4xl rounded-2xl overflow-hidden bg-[#0a0a18] shadow-[0_0_120px_rgba(200,169,110,0.08)]">
             <Image
-              src="/product.png"
+              src={`${process.env.NEXT_PUBLIC_BASE_PATH || ''}/product.png`}
               alt="DUNE 75 mechanical keyboard — flagship model"
               width={1200}
               height={675}

@@ -7,6 +7,8 @@ import Navbar from '@/components/Navbar';
 import HeroSection from '@/components/HeroSection';
 import AllProductsSection from '@/components/AllProductsSection';
 import ProductSection from '@/components/ProductSection';
+import ThemeBanner from '@/components/ThemeBanner';
+import ThemeProductSection from '@/components/ThemeProductSection';
 import ConfigureSection from '@/components/ConfigureSection';
 import FeatureGrid from '@/components/FeatureGrid';
 import VideoBreak from '@/components/VideoBreak';
@@ -46,6 +48,12 @@ export default function Home() {
 
           {/* 3. Product detail — product.png spotlight */}
           <ProductSection />
+
+          {/* Limited Edition Dune Theme Banner */}
+          <ThemeBanner />
+
+          {/* Limited Edition Theme Detail & Gallery */}
+          <ThemeProductSection />
 
           {/* 4. Configure — circular color swatches */}
           <ConfigureSection />
